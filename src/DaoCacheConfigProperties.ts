@@ -1,4 +1,20 @@
 class DaoCacheConfigProperties {
-  alive: number; // alive cache time in days
-  elements: number; // maximum elements in cache
+  cacheLifetimeInDays: number;
+  maxItemsInCache: number;
 }
+
+/*
+  Что было?
+  я вижу большое класс с двумя полями и комментарии к ним
+    
+  очень сильно пахнет Misleading Names
+
+  Что было плохо и почему?
+    1) название полей не отображают предназначение 
+
+
+  Что стало лучше и почему?
+    1) поменял название полей и убрал комментарии, теперь код стал самодокументируемым
+
+   
+*/
